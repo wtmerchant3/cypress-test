@@ -8,7 +8,6 @@ describe('Products api', () => {
                 url: 'https://serverest.dev/produtos'
             })
                 .should((response) => {
-                    // cy.log(JSON.stringify(response.body))
                     expect(response.status).to.eq(200)
                     expect(response.body.quantidade).to.eq(45)
                     expect(response.body.produtos.length).to.be.eq(45);
